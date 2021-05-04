@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<label>Use Chrome browser. Press F12 to view console log</label>
+<label>
+    Put a break point in home controller ->CspReport action. Note debugger will only hit on first CSP violation, any subsequent violation on the same page will not be posted to server so debugger will not hit.
+    <br /> You will have to stop and re-run the application.
+</label>
+
+<label>Click on GetContent and then view console log</label>
+
+<button type="button" id="btnGetContent">Get Content</button>
+
+<div id="result">
+    <partial name="_TestPartialView" />
+</div>
+
+
+<script src="~/js/home.js"></script>
